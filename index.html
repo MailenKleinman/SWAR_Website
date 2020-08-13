@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartWorkAR</title>
+    <link rel="stylesheet" href="../WEBSITE/style.css"> <!--Este es el css que agregue yo-->
+    
+    <!--Estos son los archivos de semantic que necesita la pag para funcionar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/sidebar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/accordion.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/sidebar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/accordion.min.js"></script>
+
+</head>
+
+<body>
+
+    <ul class="mobile menu">
+        <div class="ui sidebar stackable vertical left menu">
+            <div class="ui item menu">
+                <img style="padding: 10%;" src="..//WEBSITE/images/Logo_SWA_transparent_background2.png" alt="Logo">
+            </div>
+            <div class="ui item menu">
+                <div class="ui accordion">
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        INDUSTRIES
+                    </div>
+                    <div class="content">
+                        <a class="item" href="#">Healthcare</a>
+                        <a class="item" href="#">Oil and gas</a>
+                        <a class="item" href="#">Transport</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui item menu">
+                <div class="ui accordion">
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        ABOUT
+                    </div>
+                    <div class="content">
+                        <a class="item" href="#">What we offer</a>
+                        <a class="item" href="#">How it works</a>
+                        <a class="item" href="#">Devices</a>
+                        <a class="item" href="#">See it in action</a>
+                        <a class="item" href="#">Companies that trust us</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="ui item menu">CONTACT US</a>
+            <a href="#" class="ui item menu">LOG IN</a>
+        </div>  
+        <div class="ui basic icon stackable top fixed menu">
+            <div class="item">
+                <img style="width: 7em; margin-left: 0.3em" src="..//WEBSITE/images/Logo_SWA_transparent_background2.png" alt="Logo">
+            </div>
+            <a id="toggle" class="right item">
+                <i class="sidebar icon"></i>
+                <p style="margin-left:10px">MENU</p>
+            </a>
+        </div>
+        <script>
+            $('#toggle').click(function(){
+                $('.ui.sidebar').sidebar('toggle');
+            });  
+            $('.ui.accordion').accordion();
+        </script>
+    </ul>
+
+    <ul class="pcmenu">
+        <div class="ui stackable top fixed large menu"> <!--Logo de SWAR-->
+            <div class="item">
+                <img style="width: 7em; margin-left: 0.3em" src="..//WEBSITE/images/Logo_SWA_transparent_background2.png" alt="Logo">
+            </div>
+            <div class="menu right aligned"> <!--Items del menu principal-->
+                
+                <a href="#industries" class="ui simple dropdown item">INDUSTRIES<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
+                    <div class="menu">
+                        <div class="item">Healthcare</div>
+                        <div class="item">Oil and gas</div>
+                        <div class="item">Transport</div>
+                    </div>
+                </a>
+
+                <div class="ui simple dropdown item">ABOUT<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
+                    <div class="menu">
+                        <a href="#" class="item">What we offer</a>
+                        <div class="item">How it works</div>
+                        <a href="#"class="item">Devices</a>
+                        <div class="item">See it in action</div>
+                        <div class="item">Companies that trust us</div>
+                    </div>
+                </div>
+
+                <a href="#" class="item">CONTACT US</a>
+                <a href="#" class="item">LOG IN</a>
+
+            </div>
+        </div>
+    </ul>
+    
+    <div>  <!--video presentacion-->
+        <video autoplay muted loop id="myVideo">
+            <source src=".//images/Video_header3.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <main>
+        <div id="industries"><!--Botones ocn las industrias-->
+            <div class="ui grid center aligned" style="margin-top:60px"> 
+                <div class="four wide computer sixteen wide mobile eight wide tablet column">
+                    <div class="ui image fade reveal">
+                        <a href="#" class="ui visible content">
+                            <img src="../WEBSITE/images/boton1.png" class="1"/>
+                        </a>
+                        <div class="ui hidden content">
+                            <img src="../WEBSITE/images/boton1imagen.png" class="2"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="four wide computer sixteen wide mobile eight wide tablet column">
+                    <div class="ui image fade reveal">
+                        <a href="#"  class="ui visible content">
+                            <img src="../WEBSITE/images/boton2.png" class="1"/>
+                        </a>
+                        <div class="ui hidden content">
+                            <img src="../WEBSITE/images/boton2imagen.png" class="2"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="four wide computer sixteen wide mobile eight wide tablet column">
+                    <div class="ui image fade reveal">
+                        <a href="#"  class="ui visible content">
+                            <img src="../WEBSITE/images/boton3.png" class="1"/>
+                        </a>
+                        <div class="ui hidden content">
+                            <img src="../WEBSITE/images/boton3imagen.png" class="2"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div><!--Parte con la explicaciond e lo que hacemos-->
+            <div class="ui grid center aligned" style="margin-top:60px; background-color: #EAEAEA;"> 
+                <h1 id="offer" style="margin-top: 40px">What do we offer?</h1>
+            </div>
+            <div class="ui five column stackable grid" style="background-color: #EAEAEA; padding:3em"> 
+                <div class="row">
+                    <div class="column">
+                        <div class="ui link cards style_prevu_kit"style="margin: 1em;">
+                            <div class="card">
+                                <div class="content center aligned">
+                                    <div class="header">Step by step guides</div>
+                                    <div class="ui icon header"><i class="sitemap icon icon color-swa"></i></div>
+                                    <div class="description">
+                                        Valid for multiple processes: maintenance, repairs, inspections, auditing and certifications. 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui link cards style_prevu_kit"style="margin: 1em;">
+                            <div class="card">
+                                <div class="content center aligned">
+                                    <div class="header">Step by step guides</div>
+                                    <div class="ui icon header"><i class="sitemap icon icon color-swa"></i></div>
+                                    <div class="description">
+                                        Valid for multiple processes: maintenance, repairs, inspections, auditing and certifications. 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui link cards style_prevu_kit"style="margin: 1em;">
+                            <div class="card">
+                                <div class="content center aligned">
+                                    <div class="header">Audit</div>
+                                    <div class="ui icon header"><i class="clipboard check icon color-swa"></i></div>
+                                    <div class="description">
+                                        Collect data like: Tasks & activities completion time, involved personnel, assets and personnel location.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui link cards style_prevu_kit"style="margin: 1em;">
+                            <div class="card">
+                                <div class="content center aligned">
+                                    <div class="header">Fast implementation</div>
+                                    <div class="ui icon header"><i class="cogs icon color-swa"></i></div>
+                                    <div class="description">
+                                        An editor that allows to generate the processes immediately without programming.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui link cards style_prevu_kit"style="margin: 1em;">
+                            <div class="card">
+                                <div class="content center aligned">
+                                    <div class="header">Capture evidence</div>
+                                    <div class="ui icon header"><i class="camera icon color-swa"></i></div>
+                                    <div class="description">
+                                        Capture and add videos, photos, voice notes, forms to any work order. Upload to server.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="ui link cards style_prevu_kit"style="margin: 1em;">
+                            <div class="card">
+                                <div class="content center aligned">
+                                    <div class="header">Sync results</div>
+                                    <div class="ui icon header"><i class="cloud upload icon icon color-swa"></i></div>
+                                    <div class="description">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum possimus fugit cumque omnis.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui link cards style_prevu_kit"style="margin: 1em;">
+                            <div class="card">
+                                <div class="content center aligned">
+                                    <div class="header">Generate reports</div>
+                                    <div class="ui icon header"><i class="pencil icon color-swa"></i></div>
+                                    <div class="description">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum possimus fugit cumque omnis.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui link cards style_prevu_kit"style="margin: 1em;">
+                            <div class="card">
+                                <div class="content center aligned">
+                                    <div class="header">Media available</div>
+                                    <div class="ui icon header"><i class="video file outline icon color-swa"></i></div>
+                                    <div class="description">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum possimus fugit cumque omnis.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui link cards style_prevu_kit"style="margin: 1em;">
+                            <div class="card">
+                                <div class="content center aligned">
+                                    <div class="header">Augmented Reality</div>
+                                    <div class="ui icon header"><i class="cube icon color-swa"></i></div>
+                                    <div class="description">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum possimus fugit cumque omnis.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui link cards style_prevu_kit"style="margin: 1em;">
+                            <div class="card">
+                                <div class="content center aligned">
+                                    <div class="header">Step by step guides</div>
+                                    <div class="ui icon header"><i class="sitemap icon icon color-swa"></i></div>
+                                    <div class="description">
+                                        Valid for multiple processes: maintenance, repairs, inspections, auditing and certifications. 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div> <!--Parte que explicamos como lo hacemos esquemita-->
+            <div class="ui grid center aligned" style="padding:30px"> 
+                <h1 id="devices" style="margin-top: 40px">How it works</h1>
+            </div>
+            <div class="ui grid center aligned""> 
+                <img class="ui large image" src="../WEBSITE/images/whatweoffer.png" alt="Devices">
+            </div>  
+        </div>
+
+        <div style="margin-top:60px; background-color: #EAEAEA;">
+            <div class="ui grid center aligned" style="padding:30px"> 
+                <h1 id="devices" style="margin-top: 40px">See it in action!</h1>
+                <div style="text-align: center;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptatum voluptatem laudantium molestias natus nostrum dicta, assumenda dignissimos reprehenderit sunt tempore repudiandae? Veniam natus maiores cumque, quam molestias magnam ipsum.</p>
+                </div>
+                <div class="center aligned">
+                    <button class="massive ui button" style="background-color: #39A8BB; margin: 20px; color:white">
+                        VIDEO
+                      </button>
+                </div>
+            </div>
+        </div>
+
+        <div> <!--Devices que usamos-->
+            <div class="ui grid center aligned" style="padding:30px"> 
+                <h1 id="devices" style="margin-top: 40px">Multiple devices</h1>
+            </div>
+            <div>
+                <p style="padding:50px; text-align: center;">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum possimus fugit cumque omnis, pariatur corrupti, maxime laudantium rem reprehenderit molestiae labore fuga earum ipsam. Exercitationem rerum tempora mollitia amet quidem.
+                </p>
+            </div>
+            <div class="ui grid center aligned""> 
+                <img class="ui huge image" src="../WEBSITE/images/devices.png" alt="Devices">
+            </div>  
+        </div>
+
+        <div style="margin-top:60px; background-color: #EAEAEA;">
+            <div class="ui grid center aligned" style="padding:30px"> 
+                <h1 id="devices" style="margin-top: 40px">Companies that trust us</h1>
+            </div>
+            <div class="ui grid center aligned">
+                <img class="ui big image" src="../WEBSITE/images/companies.png" alt="companies">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="margin-top:60px;" class="ui segment container"> <!--contacto-->
+            <div class="ui grid center aligned">
+                <div class="ui form" style="width: 40%;">
+                    <h1 id="devices" style="margin-top: 40px">Contact us    </h1>
+                    <form class="ui form">
+                        <div class="field">
+                          <label>Name</label>
+                          <input type="text" name="first-name" placeholder="Your name here">
+                        </div>
+                        <div class="field">
+                          <label>E-mail</label>
+                          <input type="text" name="last-name" placeholder="Your E-mail here">
+                        </div>
+                        <div class="field">
+                            <label>Comment</label>
+                            <textarea></textarea>
+                          </div>
+                        <button class="ui button" type="submit"style="background-color: #39A8BB; margin: 20px; color:white;">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top:60px; background-color: #EAEAEA;">
+            <div class="ui grid center aligned" style="padding:4em;"> 
+                <div href="#industries" class="ui simple dropdown item">INDUSTRIES<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
+                    <div class="menu">
+                        <div class="item">Healthcare</div>
+                        <div class="item">Oil and gas</div>
+                        <div class="item">Transport</div>
+                    </div>
+                </div>
+
+                <div class="ui simple dropdown item">ABOUT<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
+                    <div class="menu">
+                        <div class="item">What we offer</div>
+                        <div class="item">How it works</div>
+                        <div class="item">Devices</div>
+                        <div class="item">See it in action</div>
+                        <div class="item">Companies that trust us</div>
+                    </div>
+                </div>
+
+                <div href="#" class="item">CONTACT US</div>
+                <div href="#" class="item">LOG IN</div>
+            </div>
+            <div class="ui grid center aligned">
+                <div class="ui medium fluid image" style="margin-bottom: 2em;">
+                    <img src="../WEBSITE/images/Logo_SWA_transparent_background2.png" alt="logo">
+                </div>
+            </div>  
+        </div>
+    </footer>
+    
+</body>
+</html>

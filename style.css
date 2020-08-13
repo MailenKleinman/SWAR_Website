@@ -1,0 +1,64 @@
+
+#myVideo {
+position: inherit;
+max-width: 100%;
+overflow: hidden;
+z-index: -1;
+display: block;
+margin-right: 0em;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.color-swa {
+    color: #39A8BB;
+}
+
+@media screen and (max-width: 800px) { /*Es lo que tengo que usar para la hamburguesita*/
+    .pcmenu {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    #myVideo {
+        margin-top: 6em;
+    }
+}
+   
+.style_prevu_kit
+{
+    display:inline-block;
+    border:0;
+    width:210px;
+    height:210px;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
+}
+.style_prevu_kit:hover {
+    box-shadow: 0px 0px 0px #424242;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+    border-radius: 1%;
+}
+.background-contact
+{
+    background-image: url(../WEBSITE/images/contact_background.jpg);
+    margin-top: 4em;
+}
