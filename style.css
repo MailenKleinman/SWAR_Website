@@ -16,7 +16,7 @@ margin-right: 0em;
     color: #39A8BB;
 }
 
-@media screen and (max-width: 800px) { /*Es lo que tengo que usar para la hamburguesita*/
+@media screen and (max-width: 1200px) { /*Es lo que tengo que usar para la hamburguesita*/
     .pcmenu {
         display: none;
     }
