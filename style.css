@@ -16,7 +16,7 @@ margin-right: 0em;
     color: #39A8BB;
 }
 
-@media screen and (max-width: 1200px) { /*Es lo que tengo que usar para la hamburguesita*/
+@media screen and (max-width: 800px) { /*Es lo que tengo que usar para la hamburguesita*/
     .pcmenu {
         display: none;
     }
@@ -24,7 +24,7 @@ margin-right: 0em;
         display: block;
     }
     #myVideo {
-        margin-top: 8em;
+        margin-top: 7em;
     }
 }
    
@@ -54,7 +54,7 @@ margin-right: 0em;
     -moz-transition: all 200ms ease-in;
     -moz-transform: scale(1.5);
     transition: all 200ms ease-in;
-    transform: scale(1.5);
+    transform: scale(1.2);
     border-radius: 1%;
 }
 .background-contact
@@ -65,4 +65,78 @@ margin-right: 0em;
 h1 {
     color: #39A8BB;
     text-align: center;
+}
+.onclickchange {
+color: black;
+}
+.onclickchange:hover{
+    color: #39A8BB;
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+ 
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#myDemoVideo {
+    position: inherit;
+    max-width: 50%;
+    overflow: hidden;
+    z-index: -1;
+    display: inline-block;
+    margin-right: 0em;
+    padding: 3%;
+}
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+}
+
+.slider li {
+	width: 100%;
+    list-style: none;
+    
+}
+
+.slider img {
+    width: 100%;
+    animation: cambio 20s infinite  linear;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+h5 {
+    cursor: pointer;
 }
