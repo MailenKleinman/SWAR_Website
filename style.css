@@ -32,6 +32,10 @@ margin-right: 0em;
     body{
         width: 100%;
     }
+    img{
+        max-width: 400px;
+        width: auto;
+    }
 }
    
 .style_prevu_kit
