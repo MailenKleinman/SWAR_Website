@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/sidebar.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/accordion.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/sidebar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/accordion.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -51,7 +53,6 @@
                             <a class="item" href="#diagram">How it works</a>
                             <a class="item" href="#benefits">Benefits</a>
                             <a class="item" href="#useCases">See it in action</a>
-                            <a class="item" href="#devices">Devices</a>
                         </div>
                     </div>
                 </div>
@@ -99,7 +100,6 @@
                             <a class="item" href="#diagram">How it works</a>
                             <a class="item" href="#benefits">Benefits</a>
                             <a class="item" href="#useCases">See it in action</a>
-                            <a class="item" href="#devices">Devices</a>
                         </div>
                     </div>
 
@@ -137,7 +137,7 @@
 
     <main>     
         
-        <div id="industries"><!--Parte con los botones de industrias con las que trabajamos-->
+        <div id="industries" data-aos="fade-up"><!--Parte con los botones de industrias con las que trabajamos-->
             <div class="ui grid center aligned" style="margin-top:60px">
                 <h1>Target industries for SmartWorkAR®</h1>
             </div>
@@ -193,9 +193,12 @@
                     </div>
                 </div>
             </div>
+            <script>
+                AOS.init({duration: 3000,})
+            </script>
         </div>
 
-        <div id="features"><!--Parte con la explicación de lo que ofrecemos, los features de la app-->
+        <div id="features" data-aos="fade-up" ><!--Parte con la explicación de lo que ofrecemos, los features de la app-->
             <div class="ui grid center aligned" style="margin-top:60px; background-color: #EAEAEA;"> 
                 <h1 style="margin-top: 40px">What does SmartWorkAR® offer?</h1>
             </div>
@@ -340,21 +343,27 @@
                       </h2>
                 </div>
             </div>
+            <script>
+                AOS.init({duration: 3000,})
+            </script>
         </div>
         
-        <div id="diagram"><!--Parte con el diagrama de funcionamiento e intercambio con el servidor-->
+        <div id="diagram" data-aos="fade-up"><!--Parte con el diagrama de funcionamiento e intercambio con el servidor-->
             <div class="ui grid center aligned" style="margin-top: 10%;margin-bottom: 5%;">
                 <h1>How does SmartWorkAR® works?</h1>
                 <img src="../SWAR_Website/images/diagram.png" alt="" class="ui fluid image" style="padding-right: 10%;padding-left: 10%;">
                 <button class="ui large button" style="background-color: #39A8BB;color: white;font-weight: 600; margin-top: 3%;">READ MORE</button>
             </div>
+            <script>
+                AOS.init({duration: 3000,})
+            </script>
         </div>
 
-        <div id="benefits" class="separacionSectores" style="background-color: #EAEAEA;padding:3%"> <!--Parte con los beneficios que trae SWAR a sus clientes-->
+        <div id="benefits" class="separacionSectores" style="background-color: #EAEAEA;padding:3%" data-aos="fade-up"> <!--Parte con los beneficios que trae SWAR a sus clientes-->
             <div class="ui grid center aligned"> 
                 <h1 style="margin-top: 3%">What benefits does SmartWorkAR® bring to its customers?</h1>
             </div>
-            <div class="ui grid centered" style="padding-bottom: 4%;"> 
+            <div class="ui grid centered separacionSectores" style="margin-bottom: 5em;"> 
                 <div class="item row ui divider">
                     <div>
                         <h4 class="onclickchange"><i class="check icon" style="color: green;font-size: 1.5em;"></i>It mitigates trained workforce scarcity</h4>
@@ -381,9 +390,12 @@
                     </div>
                 </div>
             </div>
+            <script>
+                AOS.init({duration: 3000,})
+            </script>
         </div>
         
-        <div id="adaptation"><!--Parte donde contamos como adaptarse a la revolucion digital-->
+        <div id="adaptation" data-aos="fade-up"><!--Parte donde contamos como adaptarse a la revolucion digital-->
             <div class="ui grid center aligned" > 
                 <div class="ui grid center aligned" style="margin-top: 3%;"> 
                     <h1 style="margin-top: 3%">Digital revolution impact: we help you adapt to new business models</h1>
@@ -415,37 +427,47 @@
                     </div>
                 </div>
             </div>
+            <script>
+                AOS.init({duration: 3000,})
+            </script>
         </div>
 
-        <div id="useCases" style="background-color: #EAEAEA;"> <!--Parte que contamos qué devices tenemos available-->
+        <div id="useCases" style="background-color: #EAEAEA;" data-aos="fade-up"> <!--Parte que contamos qué devices tenemos available-->
             <div class="ui grid center aligned"> 
                 <h1 style="margin-top:5%;">See it in action!</h1>
             </div>
-            <!--<div  class="ui grid centered" style="margin: 5%;">
-                <ul>
-                    <li style="margin-left: 2%;">Home devices Instructions and installation manuals</li>
-                    <li style="margin-left: 2%;">Industrial devices use, trouble shooting and maintenance</li>
-                    <li style="margin-left: 2%;">Medical equipment use, trouble shooting and maintenance</li>
-                    <li style="margin-left: 2%;">Assembly Instructions</li>
-                    <li style="margin-left: 2%;">Insurance inspections</li>
-                    <li style="margin-left: 2%;">Industrial devices/machinery/tools use, calibration, trouble shooting and maintenance</li>
-                    <li style="margin-left: 2%;">Safety and security processes</li>
-                    <li style="margin-left: 2%;">Auditing and inspections</li>
-                </ul>
-            </div>-->
+            <div  class="ui horizontal bulleted link list grid centered" style="margin: 5%;">
+                <a class="item">Industrial devices use, trouble shooting and maintenance</a>
+                <a class="item">Medical equipment use</a>
+                <a class="item">Assembly Instructions</a>
+                <a class="item">Insurance inspections</a>
+                <a class="item">Common medical procedures</a>
+                <a class="item">Emergency procedures</a>
+                <a class="item">Industrial devices/machinery/tools use</a>
+                <a class="item">Safety and security processes</a>
+                <a class="item">Auditing and inspections</a>
+                <a class="item">Product QA monitoring</a>
+                <a class="item">New employees/Contractor on boarding</a>
+                <a class="item">Facility Management</a>
+                <a class="item">Warehouse picking</a>
+                <a class="item">Delivery and reception inspections</a>
+            </div>
             <div class="ui grid center aligned" style="padding: 1%;"> 
                 <img class="ui fluid huge stackable image" src="../SWAR_Website/images/action.png" alt="Devices " style="padding-left:6%;padding-right:6%;">
             </div>  
             <div  class="ui grid center aligned">
                 <button class="ui huge button" style="background-color: #39A8BB;color: white;font-weight: 600; margin-bottom: 6%;">WATCH VIDEO</button>
             </div> 
+            <script>
+                AOS.init({duration: 3000,})
+            </script>
         </div>
         
     </main>
 
     <footer>
 
-        <div id="contact"><!--Formulario de contacto-->
+        <div id="contact" data-aos="fade-up"><!--Formulario de contacto-->
             <div style="margin-top:60px;width: 70%;" class="ui segment raised container"> 
                 <div class="ui grid center aligned">
                     <div class="ui form" style="width: 70%;">
@@ -468,6 +490,9 @@
                     </div>
                 </div>
             </div>
+            <script>
+                AOS.init({duration: 3000,})
+            </script>
         </div>
 
         <div><!--Menú del footer con acceso a contact, about, industries, etc, y logo-->
@@ -490,7 +515,6 @@
                             <a class="item" href="#diagram">How it works</a>
                             <a class="item" href="#benefits">Benefits</a>
                             <a class="item" href="#useCases">See it in action</a>
-                            <a class="item" href="#devices">Devices</a>
                         </div>
                     </div>
 
