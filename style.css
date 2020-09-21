@@ -26,6 +26,9 @@ margin-right: 0em;
     #myVideo {
         margin-top: 7em;
     }
+    .separacionSectores {
+        margin-bottom: 8em;
+    }
 }
    
 .style_prevu_kit
@@ -70,7 +73,6 @@ h1 {
 color: black;
 }
 .onclickchange:hover{
-    color: #39A8BB;
     transition: all 200ms ease-in;
     transform: scale(1.2);
 }

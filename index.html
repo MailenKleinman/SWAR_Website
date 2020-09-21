@@ -18,156 +18,186 @@
 </head>
 
 <body>
-
-    <ul class="mobile menu">
-        <div class="ui sidebar stackable vertical left menu">
-            <div class="ui item menu">
-                <img style="padding: 10%;" src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="Logo">
-            </div>
-            <div class="ui item menu">
-                <div class="ui accordion">
-                    <div class="title">
-                        <i class="dropdown icon"></i>
-                        INDUSTRIES
-                    </div>
-                    <div class="content">
-                        <a class="item" href="#">Healthcare</a>
-                        <a class="item" href="#">Oil and gas</a>
-                        <a class="item" href="#">Transport</a>
+    <header>
+        <ul class="mobile menu"> <!--Menu adaptado para celulares o tablets con todas las opciones: industries, about, contact, etc-->
+            <div class="ui sidebar stackable vertical left menu">
+                <div class="ui item menu">
+                    <img style="padding: 10%;" src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="Logo">
+                </div>
+                <div class="ui item menu">
+                    <div class="ui accordion">
+                        <div class="title">
+                            <i class="dropdown icon"></i>
+                            INDUSTRIES
+                        </div>
+                        <div class="content">
+                            <div class="item">Oil and gas</div>
+                            <div class="item">Health care</div>
+                            <div class="item">Manufacturing</div>
+                            <div class="item">Construction</div>
+                            <div class="item">Logistics</div>
+                            <div class="item">Others</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="ui item menu">
-                <div class="ui accordion">
-                    <div class="title">
-                        <i class="dropdown icon"></i>
-                        ABOUT
-                    </div>
-                    <div class="content">
-                        <a class="item" href="#">What we offer</a>
-                        <a class="item" href="#">How it works</a>
-                        <a class="item" href="#">Devices</a>
-                        <a class="item" href="#">See it in action</a>
+                <div class="ui item menu">
+                    <div class="ui accordion">
+                        <div class="title">
+                            <i class="dropdown icon"></i>
+                            ABOUT
+                        </div>
+                        <div class="content">
+                            <a class="item" href="#features">What we offer</a>
+                            <a class="item" href="#diagram">How it works</a>
+                            <a class="item" href="#benefits">Benefits</a>
+                            <a class="item" href="#useCases">See it in action</a>
+                            <a class="item" href="#devices">Devices</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <a href="#" class="ui item menu">CONTACT US</a>
-            <a href="#" class="ui item menu">LOG IN</a>
-        </div>  
-        <div class="ui basic icon stackable top fixed menu">
-            <div class="item">
-                <img style="width: 4em; margin-left: 0.3em" src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="Logo">
-            </div>
-            <a id="toggle" class="right item">
-                <i class="sidebar icon"></i>
-                <p style="margin-left:10px">MENU</p>
-            </a>
-        </div>
-        <script>
-            $('#toggle').click(function(){
-                $('.ui.sidebar').sidebar('toggle');
-            });  
-            $('.ui.accordion').accordion();
-        </script>
-    </ul>
-
-    <ul class="pcmenu">
-        <div class="ui stackable top fixed large menu"> <!--Logo de SWAR-->
-            <div class="item">
-                <img style="width: 4em; margin-left: 0.3em" src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="Logo">
-            </div>
-            <div class="menu right aligned"> <!--Items del menu principal-->
-                
-                <a href="#industries" class="ui simple dropdown item">INDUSTRIES<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
-                    <div class="menu">
-                        <div class="item">Healthcare</div>
-                        <div class="item">Oil and gas</div>
-                        <div class="item">Transport</div>
-                    </div>
+                <a href="#contact" class="ui item menu">CONTACT US</a>
+                <a href="#" class="ui item menu">LOG IN</a>
+            </div>  
+            <div class="ui basic icon stackable top fixed menu">
+                <div class="item">
+                    <img style="width: 4em; margin-left: 0.3em" src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="Logo">
+                </div>
+                <a id="toggle" class="right item">
+                    <i class="sidebar icon"></i>
+                    <p style="margin-left:10px">MENU</p>
                 </a>
-
-                <div class="ui simple dropdown item">ABOUT<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
-                    <div class="menu">
-                        <a href="#" class="item">What we offer</a>
-                        <div class="item">How it works</div>
-                        <a href="#"class="item">Devices</a>
-                        <div class="item">See it in action</div>
-                    </div>
-                </div>
-
-                <a href="#" class="item">CONTACT US</a>
-                <a href="#" class="item">LOG IN</a>
-
             </div>
-        </div>
-    </ul>
+            <script>
+                $('#toggle').click(function(){
+                    $('.ui.sidebar').sidebar('toggle');
+                });  
+                $('.ui.accordion').accordion();
+            </script>
+        </ul>
+
+        <ul class="pcmenu"><!--Menu adaptado para la web con todas las opciones: industries, about, contact, etc-->
+            <div class="ui stackable top fixed large menu"> <!--Logo de SWAR-->
+                <div class="item">
+                    <img style="width: 4em; margin-left: 0.3em" src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="Logo">
+                </div>
+                <div class="menu right aligned"> <!--Items del menu principal-->
+                    
+                    <a href="#industries" class="ui simple dropdown item">INDUSTRIES<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
+                        <div class="menu">
+                            <div class="item">Oil and gas</div>
+                            <div class="item">Health care</div>
+                            <div class="item">Manufacturing</div>
+                            <div class="item">Construction</div>
+                            <div class="item">Logistics</div>
+                            <div class="item">Others</div>
+                        </div>
+                    </a>
+
+                    <div class="ui simple dropdown item">ABOUT<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
+                        <div class="menu">
+                            <a class="item" href="#features">What we offer</a>
+                            <a class="item" href="#diagram">How it works</a>
+                            <a class="item" href="#benefits">Benefits</a>
+                            <a class="item" href="#useCases">See it in action</a>
+                            <a class="item" href="#devices">Devices</a>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="item">CONTACT US</a>
+                    <a href="#" class="item">LOG IN</a>
+
+                </div>
+                <script>
+                    $('header a').click(function(event){
     
-    <div>  <!--video presentacion-->
-        <video autoplay muted loop id="myVideo">
-            <source src="../SWAR_Website/images/video_home.mp4" type="video/mp4">
-        </video>
-    </div>
-
-    <main>        
-        <div class="ui grid center aligned" style="margin-top:60px">
-            <h1>Target industries for SmartWorkAR®</h1>
+                    // prevent defalt click behavior
+                    // don't jump to content
+                    event.preventDefault();
+    
+                    // identify position of target
+                    var target = $(this).attr('href');
+                    var top = $(target).offset().top;
+    
+                    // animate scroll to target
+                    $('html,body').animate({
+                    scrollTop: top
+                    },1000);
+    
+                    });
+                </script>
+            </div>
+        </ul>
+        
+        <div>  <!--Video presentación que aparece arriba de todo-->
+            <video autoplay muted loop id="myVideo">
+                <source src="../SWAR_Website/images/video_home.mp4" type="video/mp4">
+            </video>
         </div>
-        <div class="ui five column grid stackable centered" style="padding:3%">
-            <div class="column">
-                <div class="ui fluid link card">
-                    <div class="ui slide masked reveal image">
-                        <img src="../SWAR_Website/images/oilandgas.png" class="ui image">
-                    </div>
-                    <div class="content">
-                        <a class="header" style="text-align: center;">OIL AND GAS</a>
+    </header>
+
+    <main>     
+        
+        <div id="industries"><!--Parte con los botones de industrias con las que trabajamos-->
+            <div class="ui grid center aligned" style="margin-top:60px">
+                <h1>Target industries for SmartWorkAR®</h1>
+            </div>
+            <div class="ui five column grid stackable centered" style="padding:3%">
+                <div class="column">
+                    <div class="ui fluid link card">
+                        <div class="ui slide masked reveal image">
+                            <img src="../SWAR_Website/images/oilandgas.png" class="ui image">
+                        </div>
+                        <div class="content">
+                            <a class="header" style="text-align: center;">OIL AND GAS</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="ui fluid link card">
-                    <div class="ui slide masked reveal image">
-                        <img src="../SWAR_Website/images/healthcare.png" class="ui image">
-                    </div>
-                    <div class="content">
-                        <a class="header" style="text-align: center;">HEALTH CARE</a>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="ui fluid link card">
-                    <div class="ui slide masked reveal image">
-                        <img src="../SWAR_Website/images/manufacturing.png" class="ui image">
-                    </div>
-                    <div class="content">
-                        <a class="header" style="text-align: center;">MANUFACTURING</a>
+                <div class="column">
+                    <div class="ui fluid link card">
+                        <div class="ui slide masked reveal image">
+                            <img src="../SWAR_Website/images/healthcare.png" class="ui image">
+                        </div>
+                        <div class="content">
+                            <a class="header" style="text-align: center;">HEALTH CARE</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="ui fluid link card">
-                    <div class="ui slide masked reveal image">
-                        <img src="../SWAR_Website/images/construction.png" class="ui image">
-                    </div>
-                    <div class="content">
-                        <a class="header" style="text-align: center;">CONSTRUCTION</a>
+                <div class="column">
+                    <div class="ui fluid link card">
+                        <div class="ui slide masked reveal image">
+                            <img src="../SWAR_Website/images/manufacturing.png" class="ui image">
+                        </div>
+                        <div class="content">
+                            <a class="header" style="text-align: center;">MANUFACTURING</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="ui fluid link card">
-                    <div class="ui slide masked reveal image">
-                        <img src="../SWAR_Website/images/logistics.png" class="ui image">
+                <div class="column">
+                    <div class="ui fluid link card">
+                        <div class="ui slide masked reveal image">
+                            <img src="../SWAR_Website/images/construction.png" class="ui image">
+                        </div>
+                        <div class="content">
+                            <a class="header" style="text-align: center;">CONSTRUCTION</a>
+                        </div>
                     </div>
-                    <div class="content">
-                        <a class="header" style="text-align: center;">LOGISTICS</a>
+                </div>
+                <div class="column">
+                    <div class="ui fluid link card">
+                        <div class="ui slide masked reveal image">
+                            <img src="../SWAR_Website/images/logistics.png" class="ui image">
+                        </div>
+                        <div class="content">
+                            <a class="header" style="text-align: center;">LOGISTICS</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div><!--Parte con la explicaciond e lo que hacemos-->
+        <div id="features"><!--Parte con la explicación de lo que ofrecemos, los features de la app-->
             <div class="ui grid center aligned" style="margin-top:60px; background-color: #EAEAEA;"> 
-                <h1 id="offer" style="margin-top: 40px">What does SmartWorkAR® offer?</h1>
+                <h1 style="margin-top: 40px">What does SmartWorkAR® offer?</h1>
             </div>
             <div class="ui four column stackable grid center aligned" style="background-color: #EAEAEA; padding:3em;"> 
                 <div class="column">
@@ -310,12 +340,21 @@
                       </h2>
                 </div>
             </div>
+        </div>
         
-        <div> <!--Parte que explicamos como lo hacemos esquemita-->
-            <div class="ui grid center aligned" style="padding:30px"> 
-                <h1 id="devices" style="margin-top: 3%">What benefits does SmartWorkAR® bring to its customers?</h1>
+        <div id="diagram"><!--Parte con el diagrama de funcionamiento e intercambio con el servidor-->
+            <div class="ui grid center aligned" style="margin-top: 10%;margin-bottom: 5%;">
+                <h1>How does SmartWorkAR® works?</h1>
+                <img src="../SWAR_Website/images/diagram.png" alt="" class="ui fluid image" style="padding-right: 10%;padding-left: 10%;">
+                <button class="ui large button" style="background-color: #39A8BB;color: white;font-weight: 600; margin-top: 3%;">READ MORE</button>
             </div>
-            <div class="ui grid centered"> 
+        </div>
+
+        <div id="benefits" class="separacionSectores" style="background-color: #EAEAEA;padding:3%"> <!--Parte con los beneficios que trae SWAR a sus clientes-->
+            <div class="ui grid center aligned"> 
+                <h1 style="margin-top: 3%">What benefits does SmartWorkAR® bring to its customers?</h1>
+            </div>
+            <div class="ui grid centered" style="padding-bottom: 4%;"> 
                 <div class="item row ui divider">
                     <div>
                         <h4 class="onclickchange"><i class="check icon" style="color: green;font-size: 1.5em;"></i>It mitigates trained workforce scarcity</h4>
@@ -344,125 +383,128 @@
             </div>
         </div>
         
+        <div id="adaptation"><!--Parte donde contamos como adaptarse a la revolucion digital-->
+            <div class="ui grid center aligned" > 
+                <div class="ui grid center aligned" style="margin-top: 3%;"> 
+                    <h1 style="margin-top: 3%">Digital revolution impact: we help you adapt to new business models</h1>
+                </div>
+                <div class="ui grid center aligned" style="padding-bottom: 4em;padding-left: 4em;padding-right: 4em;"> 
+                    <div class="four wide computer sixteen wide mobile eight wide tablet column">
+                        <div class="ui image fade reveal">
+                            <img src="../SWAR_Website/images/boton4.png" class="visible content"/>
+                            <img src="../SWAR_Website/images/boton4imagen.png" class="ui hidden content"/>
+                        </div>
+                    </div>
+                    <div class="four wide computer sixteen wide mobile eight wide tablet column">
+                        <div class="ui image fade reveal">
+                            <img src="../SWAR_Website/images/boton5.png" class="visible content"/>
+                            <img src="../SWAR_Website/images/boton5imagen.png" class="ui hidden content"/>
+                        </div>
+                    </div>
+                    <div class="four wide computer sixteen wide mobile eight wide tablet column">
+                        <div class="ui image fade reveal">
+                            <img src="../SWAR_Website/images/boton6.png" class="visible content"/>
+                            <img src="../SWAR_Website/images/boton6imagen.png" class="ui hidden content"/>
+                        </div>
+                    </div>
+                    <div class="four wide computer sixteen wide mobile eight wide tablet column">
+                        <div class="ui image fade reveal">
+                            <img src="../SWAR_Website/images/boton7.png" class="visible content"/>
+                            <img src="../SWAR_Website/images/boton7imagen.png" class="ui hidden content"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <div class="ui grid center aligned" style="margin-top:8%;background-color: #EAEAEA"> 
-            <div class="ui grid center aligned" style="margin-top: 2%;"> 
-                <h1 id="devices" style="margin-top: 3%">How does SmartWorkAR® helps you adapt to digital impact?</h1>
+        <div id="useCases" style="background-color: #EAEAEA;"> <!--Parte que contamos qué devices tenemos available-->
+            <div class="ui grid center aligned"> 
+                <h1 style="margin-top:5%;">See it in action!</h1>
             </div>
-            <div class="ui grid center aligned" style="padding: 4em;"> 
-                <div class="four wide computer sixteen wide mobile eight wide tablet column">
-                    <div class="ui image fade reveal">
-                        <img src="../SWAR_Website/images/boton4.png" class="visible content"/>
-                        <img src="../SWAR_Website/images/boton4imagen.png" class="ui hidden content"/>
-                    </div>
-                </div>
-                <div class="four wide computer sixteen wide mobile eight wide tablet column">
-                    <div class="ui image fade reveal">
-                        <img src="../SWAR_Website/images/boton5.png" class="visible content"/>
-                        <img src="../SWAR_Website/images/boton5imagen.png" class="ui hidden content"/>
-                    </div>
-                </div>
-                <div class="four wide computer sixteen wide mobile eight wide tablet column">
-                    <div class="ui image fade reveal">
-                        <img src="../SWAR_Website/images/boton6.png" class="visible content"/>
-                        <img src="../SWAR_Website/images/boton6imagen.png" class="ui hidden content"/>
-                    </div>
-                </div>
-                <div class="four wide computer sixteen wide mobile eight wide tablet column">
-                    <div class="ui image fade reveal">
-                        <img src="../SWAR_Website/images/boton7.png" class="visible content"/>
-                        <img src="../SWAR_Website/images/boton7imagen.png" class="ui hidden content"/>
-                    </div>
-                </div>
-            </div>
+            <!--<div  class="ui grid centered" style="margin: 5%;">
+                <ul>
+                    <li style="margin-left: 2%;">Home devices Instructions and installation manuals</li>
+                    <li style="margin-left: 2%;">Industrial devices use, trouble shooting and maintenance</li>
+                    <li style="margin-left: 2%;">Medical equipment use, trouble shooting and maintenance</li>
+                    <li style="margin-left: 2%;">Assembly Instructions</li>
+                    <li style="margin-left: 2%;">Insurance inspections</li>
+                    <li style="margin-left: 2%;">Industrial devices/machinery/tools use, calibration, trouble shooting and maintenance</li>
+                    <li style="margin-left: 2%;">Safety and security processes</li>
+                    <li style="margin-left: 2%;">Auditing and inspections</li>
+                </ul>
+            </div>-->
+            <div class="ui grid center aligned" style="padding: 1%;"> 
+                <img class="ui fluid huge stackable image" src="../SWAR_Website/images/action.png" alt="Devices " style="padding-left:6%;padding-right:6%;">
+            </div>  
+            <div  class="ui grid center aligned">
+                <button class="ui huge button" style="background-color: #39A8BB;color: white;font-weight: 600; margin-bottom: 6%;">WATCH VIDEO</button>
+            </div> 
         </div>
         
-
-        <div> <!--Devices que usamos-->
-            <div class="ui grid center aligned"> 
-                <h1 id="devices" style="margin-top:8%;">Multiple device adapt</h1>
-            </div>
-            <div class="ui grid center aligned" style="padding: 1%;"> 
-                <img class="ui fluid image" src="../SWAR_Website/images/devices.png" alt="Devices ">
-            </div>  
-        </div>
-
-        <div style="background-color: #EAEAEA; margin-top: 5%;">
-            <div class="ui grid center aligned"> 
-                <h1 id="devices" style="padding-top: 3%;">See it in action</h1>
-            </div>
-            <div class="ui grid center aligned"> 
-                <h5> <i class="youtube icon"></i> Go to our Youtube channel!</h5>
-            </div>
-            <div class="ui grid centered aligned"> 
-                <div>  <!--video presentacion-->
-                    <video autoplay muted loop id="myDemoVideo">
-                        <source src="../SWAR_Website/images/SmartWorkAR - Commissioning test demo.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
-
-        <!--<div style="margin-top:60px; background-color: #EAEAEA;">
-            <div class="ui grid center aligned" style="padding:30px"> 
-                <h1 id="devices" style="margin-top: 40px">Companies that trust us</h1>
-            </div>
-            <div class="ui grid center aligned">
-                <img class="ui big image" src="../SWAR_Website/images/companies.png" alt="companies">
-            </div>-->
     </main>
 
     <footer>
-        <div style="margin-top:60px;width: 70%;" class="ui segment raised container"> <!--contacto-->
-            <div class="ui grid center aligned">
-                <div class="ui form" style="width: 70%;">
-                    <h1 id="devices" style="margin-top: 40px">Contact us</h1>
-                    <form class="ui form">
-                        <div class="field">
-                          <label>Name</label>
-                          <input type="text" name="first-name" placeholder="Your name here">
-                        </div>
-                        <div class="field">
-                          <label>E-mail</label>
-                          <input type="text" name="last-name" placeholder="Your E-mail here">
-                        </div>
-                        <div class="field">
-                            <label>Comment</label>
-                            <textarea></textarea>
-                          </div>
-                        <button class="ui button" type="submit"style="background-color: #39A8BB; margin-bottom: 40px; color:white;">Send</button>
-                    </form>
+
+        <div id="contact"><!--Formulario de contacto-->
+            <div style="margin-top:60px;width: 70%;" class="ui segment raised container"> 
+                <div class="ui grid center aligned">
+                    <div class="ui form" style="width: 70%;">
+                        <h1 style="margin-top: 40px">Contact us</h1>
+                        <form class="ui form">
+                            <div class="field">
+                            <label>Name</label>
+                            <input type="text" name="first-name" placeholder="Your name here">
+                            </div>
+                            <div class="field">
+                            <label>E-mail</label>
+                            <input type="text" name="last-name" placeholder="Your E-mail here">
+                            </div>
+                            <div class="field">
+                                <label>Comment</label>
+                                <textarea></textarea>
+                            </div>
+                            <button class="ui button" type="submit"style="background-color: #39A8BB; margin-bottom: 40px; color:white;">Send</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <div style="margin-top:60px; background-color: #EAEAEA;">
-            <div class="ui grid center aligned" style="padding:4em;"> 
-                <div href="#industries" class="ui simple dropdown item">INDUSTRIES<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
-                    <div class="menu">
-                        <div class="item">Healthcare</div>
-                        <div class="item">Oil and gas</div>
-                        <div class="item">Transport</div>
-                    </div>
-                </div>
 
-                <div class="ui simple dropdown item">ABOUT<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
-                    <div class="menu">
-                        <div class="item">What we offer</div>
-                        <div class="item">How it works</div>
-                        <div class="item">Devices</div>
-                        <div class="item">See it in action</div>
+        <div><!--Menú del footer con acceso a contact, about, industries, etc, y logo-->
+            <div style="margin-top:60px; background-color: #EAEAEA;">
+                <div class="ui grid center aligned" style="padding:4em;"> 
+                    <div href="#industries" class="ui simple dropdown item">INDUSTRIES<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
+                        <div class="menu">
+                            <div class="item">Oil and gas</div>
+                            <div class="item">Health care</div>
+                            <div class="item">Manufacturing</div>
+                            <div class="item">Construction</div>
+                            <div class="item">Logistics</div>
+                            <div class="item">Others</div>
+                        </div>
                     </div>
-                </div>
 
-                <div href="#" class="item">CONTACT US</div>
-                <div href="#" class="item">LOG IN</div>
+                    <div class="ui simple dropdown item">ABOUT<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
+                        <div class="menu">
+                            <a class="item" href="#features">What we offer</a>
+                            <a class="item" href="#diagram">How it works</a>
+                            <a class="item" href="#benefits">Benefits</a>
+                            <a class="item" href="#useCases">See it in action</a>
+                            <a class="item" href="#devices">Devices</a>
+                        </div>
+                    </div>
+
+                    <a style="color: black;" href="#contact" class="item">CONTACT US</a>
+                    <a style="color: black;" href="#" class="item">LOG IN</a>
+                </div>
+                <div class="ui grid center aligned">
+                    <div class="ui medium fluid image" style="margin-bottom: 2em;">
+                        <img src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="logo">
+                    </div>
+                </div>  
             </div>
-            <div class="ui grid center aligned">
-                <div class="ui medium fluid image" style="margin-bottom: 2em;">
-                    <img src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="logo">
-                </div>
-            </div>  
         </div>
+
     </footer>
     
 </body>
