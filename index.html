@@ -353,7 +353,7 @@
                     <div class="ui fluid image" >
                         <img src="../SWAR_Website/images/diagram.png" alt="" class="ui fluid image" style="padding-right: 10%;padding-left: 10%;">
                     </div>
-                    <button class="ui large button" style="background-color: #39A8BB;color: white;font-weight: 600; margin-top: 3%;">READ MORE</button>
+                    <!--<button class="ui large button" style="background-color: #39A8BB;color: white;font-weight: 600; margin-top: 3%;">READ MORE</button>-->
                 </div>
                 <script>
                     AOS.init({duration: 3000,})
@@ -467,26 +467,25 @@
         </main>
 
         <footer>
-
             <div id="contact" data-aos="fade-up"><!--Formulario de contacto-->
                 <div style="margin-top:60px;width: 70%;" class="ui segment raised container"> 
                     <div class="ui grid center aligned">
                         <div class="ui form" style="width: 70%;">
                             <h1 style="margin-top: 40px">Contact us</h1>
-                            <form class="ui form">
+                            <form class="ui form" form action="https://formspree.io/f/mwkwlnbp" method="POST">
                                 <div class="field">
                                 <label>Name</label>
-                                <input type="text" name="first-name" placeholder="Your name here">
+                                <input type="text" name="name" placeholder="Your name here">
                                 </div>
                                 <div class="field">
                                 <label>E-mail</label>
-                                <input type="text" name="last-name" placeholder="Your E-mail here">
+                                <input type="email" name="_replyto" placeholder="Your E-mail here">
                                 </div>
                                 <div class="field">
                                     <label>Comment</label>
-                                    <textarea></textarea>
+                                    <textarea type="text" name="comment"></textarea>
                                 </div>
-                                <button class="ui button" type="submit"style="background-color: #39A8BB; margin-bottom: 40px; color:white;">Send</button>
+                                <button class="ui button" type="submit" value="Send" style="background-color: #39A8BB; margin-bottom: 40px; color:white;">Send</button>
                             </form>
                         </div>
                     </div>
@@ -518,7 +517,7 @@
                             </div>
                         </div>
 
-                        <a style="color: black;" href="#contact" class="item">CONTACT US</a>
+                        <a style="color: black;" href="#contact" class="item">CONTACT US</a>    
                     </div>
                     <div class="ui grid center aligned">
                         <div class="ui medium fluid image" style="margin-bottom: 2em;">
