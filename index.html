@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartWorkAR</title>
-    <link rel="stylesheet" href="../SWAR_Website/style.css"> <!--Este es el css que agregue yo-->
-    
-    <!--Estos son los archivos de semantic que necesita la pag para funcionar-->
+     
+
+    <!--Este es el css que agregue yo-->
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=12VpOpPJef6LjAf87CpQefHT7hi2gbwcw">
+        <!--Estos son los archivos de semantic que nec esita la pag para funcionar-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/sidebar.min.css">
@@ -19,518 +21,519 @@
 
 </head>
 
-<body>
-    <header>
-        <ul class="mobile menu"> <!--Menu adaptado para celulares o tablets con todas las opciones: industries, about, contact, etc-->
-            <div class="ui sidebar stackable vertical left menu">
-                <div class="ui item menu">
-                    <img style="padding: 10%;" src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="Logo">
-                </div>
-                <div class="ui item menu">
-                    <div class="ui accordion">
-                        <div class="title">
-                            <i class="dropdown icon"></i>
-                            INDUSTRIES
-                        </div>
-                        <div class="content">
-                            <div class="item">Oil and gas</div>
-                            <div class="item">Health care</div>
-                            <div class="item">Manufacturing</div>
-                            <div class="item">Construction</div>
-                            <div class="item">Logistics</div>
-                            <div class="item">Others</div>
+<body class="pushable">
+    <div class="pusher">
+        <header>
+            <ul class="mobile menu"> <!--Menu adaptado para celulares o tablets con todas las opciones: industries, about, contact, etc-->
+                <div class="ui sidebar stackable vertical left menu">
+                    <div class="ui item menu">
+                        <img style="padding: 10%;" src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="Logo">
+                    </div>
+                    <div class="ui item menu">
+                        <div class="ui accordion">
+                            <div class="title">
+                                <i class="dropdown icon"></i>
+                                INDUSTRIES
+                            </div>
+                            <div class="content">
+                                <div class="item">Oil and gas</div>
+                                <div class="item">Health care</div>
+                                <div class="item">Manufacturing</div>
+                                <div class="item">Construction</div>
+                                <div class="item">Logistics</div>
+                                <div class="item">Others</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="ui item menu">
-                    <div class="ui accordion">
-                        <div class="title">
-                            <i class="dropdown icon"></i>
-                            ABOUT
-                        </div>
-                        <div class="content">
-                            <a class="item" href="#features">What we offer</a>
-                            <a class="item" href="#diagram">How it works</a>
-                            <a class="item" href="#benefits">Benefits</a>
-                            <a class="item" href="#useCases">See it in action</a>
+                    <div class="ui item menu">
+                        <div class="ui accordion">
+                            <div class="title">
+                                <i class="dropdown icon"></i>
+                                ABOUT
+                            </div>
+                            <div class="content">
+                                <a class="item" href="#features">What we offer</a>
+                                <a class="item" href="#diagram">How it works</a>
+                                <a class="item" href="#benefits">Benefits</a>
+                                <a class="item" href="#useCases">See it in action</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <a href="#contact" class="ui item menu">CONTACT US</a>
-                <a href="#" class="ui item menu">LOG IN</a>
-            </div>  
-            <div class="ui basic icon stackable top fixed menu">
-                <div class="item">
-                    <img style="width: 4em; margin-left: 0.3em" src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="Logo">
-                </div>
-                <a id="toggle" class="right item">
-                    <i class="sidebar icon"></i>
-                    <p style="margin-left:10px">MENU</p>
-                </a>
-            </div>
-            <script>
-                $('#toggle').click(function(){
-                    $('.ui.sidebar').sidebar('toggle');
-                });  
-                $('.ui.accordion').accordion();
-            </script>
-        </ul>
-
-        <ul class="pcmenu"><!--Menu adaptado para la web con todas las opciones: industries, about, contact, etc-->
-            <div class="ui stackable top fixed large menu"> <!--Logo de SWAR-->
-                <div class="item">
-                    <img style="width: 4em; margin-left: 0.3em" src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="Logo">
-                </div>
-                <div class="menu right aligned"> <!--Items del menu principal-->
-                    
-                    <a href="#industries" class="ui simple dropdown item">INDUSTRIES<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
-                        <div class="menu">
-                            <div class="item">Oil and gas</div>
-                            <div class="item">Health care</div>
-                            <div class="item">Manufacturing</div>
-                            <div class="item">Construction</div>
-                            <div class="item">Logistics</div>
-                            <div class="item">Others</div>
-                        </div>
+                    <a href="#contact" class="ui item menu">CONTACT US</a>
+                    <a href="#" class="ui item menu">LOG IN</a>
+                </div>  
+                <div class="ui basic icon stackable top fixed menu">
+                    <div class="item">
+                        <img style="width: 4em; margin-left: 0.3em" src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="Logo">
+                    </div>
+                    <a id="toggle" class="right item">
+                        <i class="sidebar icon"></i>
+                        <p style="margin-left:10px">MENU</p>
                     </a>
-
-                    <div class="ui simple dropdown item">ABOUT<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
-                        <div class="menu">
-                            <a class="item" href="#features">What we offer</a>
-                            <a class="item" href="#diagram">How it works</a>
-                            <a class="item" href="#benefits">Benefits</a>
-                            <a class="item" href="#useCases">See it in action</a>
-                        </div>
-                    </div>
-
-                    <a href="#contact" class="item">CONTACT US</a>
-                    <a href="#" class="item">LOG IN</a>
-
                 </div>
                 <script>
-                    $('header a').click(function(event){
-    
-                    // prevent defalt click behavior
-                    // don't jump to content
-                    event.preventDefault();
-    
-                    // identify position of target
-                    var target = $(this).attr('href');
-                    var top = $(target).offset().top;
-    
-                    // animate scroll to target
-                    $('html,body').animate({
-                    scrollTop: top
-                    },1000);
-    
-                    });
+                    $('#toggle').click(function(){
+                        $('.ui.sidebar').sidebar('toggle');
+                    });  
+                    $('.ui.accordion').accordion();
+                </script>
+            </ul>
+
+            <ul class="pcmenu"><!--Menu adaptado para la web con todas las opciones: industries, about, contact, etc-->
+                <div class="ui stackable top fixed large menu"> <!--Logo de SWAR-->
+                    <div class="item">
+                        <img style="width: 4em; margin-left: 0.3em" src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="Logo">
+                    </div>
+                    <div class="menu right aligned"> <!--Items del menu principal-->
+                        
+                        <a href="#industries" class="ui simple dropdown item">INDUSTRIES<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
+                            <div class="menu">
+                                <div class="item">Oil and gas</div>
+                                <div class="item">Health care</div>
+                                <div class="item">Manufacturing</div>
+                                <div class="item">Construction</div>
+                                <div class="item">Logistics</div>
+                                <div class="item">Others</div>
+                            </div>
+                        </a>
+
+                        <div class="ui simple dropdown item">ABOUT<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
+                            <div class="menu">
+                                <a class="item" href="#features">What we offer</a>
+                                <a class="item" href="#diagram">How it works</a>
+                                <a class="item" href="#benefits">Benefits</a>
+                                <a class="item" href="#useCases">See it in action</a>
+                            </div>
+                        </div>
+
+                        <a href="#contact" class="item">CONTACT US</a>
+                        <a href="#" class="item">LOG IN</a>
+
+                    </div>
+                    <script>
+                        $('header a').click(function(event){
+        
+                        // prevent defalt click behavior
+                        // don't jump to content
+                        event.preventDefault();
+        
+                        // identify position of target
+                        var target = $(this).attr('href');
+                        var top = $(target).offset().top;
+        
+                        // animate scroll to target
+                        $('html,body').animate({
+                        scrollTop: top
+                        },1000);
+        
+                        });
+                    </script>
+                </div>
+            </ul>
+            
+            <div>  <!--Video presentación que aparece arriba de todo-->
+                <video autoplay muted loop id="myVideo" style="width: 100%;">
+                    <source src="../SWAR_Website/images/video_home.mp4" type="video/mp4">
+                </video>
+            </div>
+        </header>
+
+        <main>     
+            <div id="industries" data-aos="fade-up"><!--Parte con los botones de industrias con las que trabajamos-->
+                <div class="ui grid center aligned" style="margin-top:60px">
+                    <h1>Target industries for SmartWorkAR®</h1>
+                </div>
+                <div class="ui five column grid stackable centered" style="padding:3%">
+                    <div class="column">
+                        <div class="ui fluid link card">
+                            <div class="ui slide masked reveal image">
+                                <img src="../SWAR_Website/images/oilandgas.png" class="ui image">
+                            </div>
+                            <div class="content">
+                                <a class="header" style="text-align: center;">ENERGY</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui fluid link card">
+                            <div class="ui slide masked reveal image">
+                                <img src="../SWAR_Website/images/healthcare.png" class="ui image">
+                            </div>
+                            <div class="content">
+                                <a class="header" style="text-align: center;">HEALTHCARE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui fluid link card">
+                            <div class="ui slide masked reveal image">
+                                <img src="../SWAR_Website/images/manufacturing.png" class="ui image">
+                            </div>
+                            <div class="content">
+                                <a class="header" style="text-align: center;">UTILITIES</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui fluid link card">
+                            <div class="ui slide masked reveal image">
+                                <img src="../SWAR_Website/images/construction.png" class="ui image">
+                            </div>
+                            <div class="content">
+                                <a class="header" style="text-align: center;">BUILDING</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui fluid link card">
+                            <div class="ui slide masked reveal image">
+                                <img src="../SWAR_Website/images/logistics.png" class="ui image">
+                            </div>
+                            <div class="content">
+                                <a class="header" style="text-align: center;">LOGISTICS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    AOS.init({duration: 3000,})
                 </script>
             </div>
-        </ul>
-        
-        <div>  <!--Video presentación que aparece arriba de todo-->
-            <video autoplay muted loop id="myVideo" style="width: 100%;">
-                <source src="../SWAR_Website/images/video_home.mp4" type="video/mp4">
-            </video>
-        </div>
-    </header>
 
-    <main>     
-        <div id="industries" data-aos="fade-up"><!--Parte con los botones de industrias con las que trabajamos-->
-            <div class="ui grid center aligned" style="margin-top:60px">
-                <h1>Target industries for SmartWorkAR®</h1>
-            </div>
-            <div class="ui five column grid stackable centered" style="padding:3%">
-                <div class="column">
-                    <div class="ui fluid link card">
-                        <div class="ui slide masked reveal image">
-                            <img src="../SWAR_Website/images/oilandgas.png" class="ui image">
-                        </div>
-                        <div class="content">
-                            <a class="header" style="text-align: center;">OIL AND GAS</a>
-                        </div>
-                    </div>
+            <div id="features" data-aos="fade-up" ><!--Parte con la explicación de lo que ofrecemos, los features de la app-->
+                <div class="ui grid center aligned" style="margin-top:60px; background-color: #EAEAEA;"> 
+                    <h1 style="margin-top: 40px">What does SmartWorkAR® offer?</h1>
                 </div>
-                <div class="column">
-                    <div class="ui fluid link card">
-                        <div class="ui slide masked reveal image">
-                            <img src="../SWAR_Website/images/healthcare.png" class="ui image">
-                        </div>
-                        <div class="content">
-                            <a class="header" style="text-align: center;">HEALTH CARE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="ui fluid link card">
-                        <div class="ui slide masked reveal image">
-                            <img src="../SWAR_Website/images/manufacturing.png" class="ui image">
-                        </div>
-                        <div class="content">
-                            <a class="header" style="text-align: center;">MANUFACTURING</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="ui fluid link card">
-                        <div class="ui slide masked reveal image">
-                            <img src="../SWAR_Website/images/construction.png" class="ui image">
-                        </div>
-                        <div class="content">
-                            <a class="header" style="text-align: center;">CONSTRUCTION</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="ui fluid link card">
-                        <div class="ui slide masked reveal image">
-                            <img src="../SWAR_Website/images/logistics.png" class="ui image">
-                        </div>
-                        <div class="content">
-                            <a class="header" style="text-align: center;">LOGISTICS</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <script>
-                AOS.init({duration: 3000,})
-            </script>
-        </div>
-
-        <div id="features" data-aos="fade-up" ><!--Parte con la explicación de lo que ofrecemos, los features de la app-->
-            <div class="ui grid center aligned" style="margin-top:60px; background-color: #EAEAEA;"> 
-                <h1 style="margin-top: 40px">What does SmartWorkAR® offer?</h1>
-            </div>
-            <div class="ui four column stackable grid center aligned" style="background-color: #EAEAEA; padding:3em;"> 
-                <div class="column">
-                    <h2 class="ui icon header style_prevu_kit">
-                        <i style="color: grey; " class="eye icon"></i>
-                        <div class="content" style="color: #39A8BB;">
-                            Live process capture tool
-                          <div class="sub header">Capture and model any protocol by doing it</div>
-                        </div>
-                    </h2>
-                </div>
-                <div class="column">
-                    <h2 class="ui icon header style_prevu_kit">
-                        <i style="color: grey;" class="edit outline icon"></i>
-                        <div class="content" style="color: #39A8BB">
-                            Protocols editing 
-                          <div class="sub header">Easy to use web based protocol editor</div>
-                        </div>
-                      </h2>
-                </div>
-                <div class="column">
-                    <h2 class="ui icon header style_prevu_kit">
-                        <i style="color: grey;" class="sync alternate icon"></i>
-                        <div class="content" style="color: #39A8BB">
-                            On/Off line data sync capabilities
-                          <div class="sub header">No need to be connected to a wifi network to sync</div>
-                        </div>
-                      </h2>
-                </div>
-                <div class="column">
-                    <h2 class="ui icon header style_prevu_kit">
-                        <i style="color: grey;" class="check icon"></i>
-                        <div class="content" style="color: #39A8BB">
-                            Enforce process compliance
-                          <div class="sub header">Capture evidence of mandatory tasks completion</div>
-                        </div>
-                      </h2>
-                </div>
-                <div class="column">
-                    <h2 class="ui icon header style_prevu_kit">
-                        <i style="color: grey;" class="search icon"></i>
-                        <div class="content" style="color: #39A8BB">
-                            Data collection 
-                          <div class="sub header">Store in device user data, text, times, dates, locations, data streams, QR and barcode readings, audio, video and photos</div>
-                        </div>
-                      </h2>
-                </div>
-                <div class="column">
-                    <h2 class="ui icon header style_prevu_kit">
-                        <i style="color: grey;" class="cog icon"></i>
-                        <div class="content" style="color: #39A8BB">
-                            Web server open APIs
-                          <div class="sub header">To feed back to any analytics engine, ERP, LMS, CMS, etc.</div>
-                        </div>
-                      </h2>
-                </div>
-                <div class="column">
-                    <h2 class="ui icon header style_prevu_kit">
-                        <i style="color: grey;" class="cloud icon"></i>
-                        <div class="content" style="color: #39A8BB">
-                            Cloud based server
-                          <div class="sub header">On AWS or any other Cloud services provider</div>
-                        </div>
-                      </h2>
-                </div>
-                <div class="column">
-                    <h2 class="ui icon header style_prevu_kit">
-                        <i style="color: grey;" class="laptop icon"></i>
-                        <div class="content" style="color: #39A8BB">
-                            Multiplatform runtime client
-                          <div class="sub header">Android, iOS, Win, Web</div>
-                        </div>
-                      </h2>
-                </div>
-                <!--<div class="column">
-                    <h2 class="ui icon header style_prevu_kit">
-                        <i style="color: grey;" class="bluetooth b icon"></i>
-                        <div class="content" style="color: #39A8BB">
-                            Bluetooth and IoT connectivity
-                          <div class="sub header">Read data streams from smart devices like barcode scanners, sensors, beacons
-                            or smart tools directly into protocols</div>
-                        </div>
-                      </h2>
-                </div>-->
-                <div class="column">
-                    <h2 class="ui icon header style_prevu_kit">
-                        <i style="color: grey;" class="cube icon"></i>
-                        <div class="content" style="color: #39A8BB">
-                            AR ready
-                            <div class="sub header">ARCore, ARKit and MS Mix reality support</div>
-                        </div>
-                      </h2>
-                </div>
-                <!--<div class="column">
-                    <h2 class="ui icon header style_prevu_kit">
-                        <i style="color: grey;" class="microphone icon"></i>
-                        <div class="content" style="color: #39A8BB">
-                            Voice engine driven interface available
-                          <div class="sub header">Hands-free App navigation with voice commands and speech-to-text data entry</div>
-                        </div>
-                      </h2>
-                </div>-->
-                <div class="column">
-                    <h2 class="ui icon header style_prevu_kit">
-                        <i style="color: grey;" class="map marker alternate icon"></i>
-                        <div class="content" style="color: #39A8BB">
-                            Device and protocol handoff
-                          <div class="sub header">Start a task on one device and let others pick up where you left off, on the same
-                            or another device</div>
-                        </div>
-                      </h2>
-                </div>
-                <!--<div class="column">
-                    <h2 class="ui icon header style_prevu_kit">
-                        <i style="color: grey;" class="headphones icon"></i>
-                        <div class="content" style="color: #39A8BB">
-                            Remote support via video calling
-                          <div class="sub header">Make and receive video calls and provide remote support</div>
-                        </div>
-                      </h2>
-                </div>-->
-                <div class="column">
-                    <h2 class="ui icon header style_prevu_kit">
-                        <i style="color: grey;" class="server icon"></i>
-                        <div class="content" style="color: #39A8BB">
-                            Web server portal based Queries
-                          <div class="sub header">Easily query process’s results and save them for further analysis or to be sent to
-                            external systems</div>
-                        </div>
-                      </h2>
-                </div>
-                <div class="column">
-                    <h2 class="ui icon header style_prevu_kit">
-                        <i style="color: grey;" class="wifi icon"></i>
-                        <div class="content" style="color: #39A8BB">
-                            Wireless updates
-                          <div class="sub header">All client software updates to are wireless, no need to manually connect to a
-                            computer</div>
-                        </div>
-                      </h2>
-                </div>
-            </div>
-            <script>
-                AOS.init({duration: 3000,})
-            </script>
-        </div>
-        
-        <div id="diagram" data-aos="fade-up"><!--Parte con el diagrama de funcionamiento e intercambio con el servidor-->
-            <div class="ui grid center aligned" style="margin-top: 10%;margin-bottom: 5%;">
-                <h1>How does SmartWorkAR® works?</h1>
-                <div class="ui fluid image" >
-                    <img src="../SWAR_Website/images/diagram.png" alt="" class="ui fluid image" style="padding-right: 10%;padding-left: 10%;">
-                </div>
-                <button class="ui large button" style="background-color: #39A8BB;color: white;font-weight: 600; margin-top: 3%;">READ MORE</button>
-            </div>
-            <script>
-                AOS.init({duration: 3000,})
-            </script>
-        </div>
-
-        <div id="benefits" class="separacionSectores" style="background-color: #EAEAEA;padding:3%" data-aos="fade-up"> <!--Parte con los beneficios que trae SWAR a sus clientes-->
-            <div class="ui grid center aligned"> 
-                <h1 style="margin-top: 3%">What benefits does SmartWorkAR® bring to its customers?</h1>
-            </div>
-            <div class="ui grid centered separacionSectores" style="margin-bottom: 5em;"> 
-                <div class="item row ui divider">
-                    <div>
-                        <h4 class="onclickchange"><i class="check icon" style="color: green;font-size: 1.5em;"></i>It mitigates trained workforce scarcity</h4>
-                    </div>
-                </div>
-                <div class="item row ui divider">
-                    <div>
-                        <h4  class="onclickchange"><i class="check icon" style="color: green;font-size: 1.5em;"></i>It highly improves field workforce productivity</h4>
-                    </div>
-                </div>
-                <div class="item row ui divider">
-                    <div>
-                        <h4  class="onclickchange"><i class="check icon" style="color: green;font-size: 1.5em;"></i>It raises the potential ceiling of any worker productivity</h4>
-                    </div>
-                </div>
-                <div class="item row ui divider">
-                    <div>
-                        <h4  class="onclickchange"><i class="check icon" style="color: green;font-size: 1.5em;"></i>It improves quality output by enforcing and monitoring company processes</h4>
-                    </div>
-                </div>
-                <div class="item row ui divider">
-                    <div>
-                        <h4  class="onclickchange"><i class="check icon" style="color: green;font-size: 1.5em;"></i>It bridges the productivity gap between human labor vs automated systems</h4>
-                    </div>
-                </div>
-            </div>
-            <script>
-                AOS.init({duration: 3000,})
-            </script>
-        </div>
-        
-        <div id="adaptation" data-aos="fade-up"><!--Parte donde contamos como adaptarse a la revolucion digital-->
-            <div class="ui grid center aligned" > 
-                <div class="ui grid center aligned" style="margin-top: 3%;"> 
-                    <h1 style="margin-top: 3%">Digital revolution impact: we help you adapt to new business models</h1>
-                </div>
-                <div class="ui grid center aligned" style="padding-bottom: 4em;padding-left: 4em;padding-right: 4em;"> 
-                    <div class="four wide computer sixteen wide mobile eight wide tablet column">
-                        <div class="ui fluid image fade reveal">
-                            <img src="../SWAR_Website/images/boton4.png" class="visible content"/>
-                            <img src="../SWAR_Website/images/boton4imagen.png" class="ui hidden content"/>
-                        </div>
-                    </div>
-                    <div class="four wide computer sixteen wide mobile eight wide tablet column">
-                        <div class="ui fluid image fade reveal">
-                            <img src="../SWAR_Website/images/boton5.png" class="visible content"/>
-                            <img src="../SWAR_Website/images/boton5imagen.png" class="ui hidden content"/>
-                        </div>
-                    </div>
-                    <div class="four wide computer sixteen wide mobile eight wide tablet column">
-                        <div class="ui fluid image fade reveal">
-                            <img src="../SWAR_Website/images/boton6.png" class="visible content"/>
-                            <img src="../SWAR_Website/images/boton6imagen.png" class="ui hidden content"/>
-                        </div>
-                    </div>
-                    <div class="four wide computer sixteen wide mobile eight wide tablet column">
-                        <div class="ui fluid image fade reveal">
-                            <img src="../SWAR_Website/images/boton7.png" class="visible content"/>
-                            <img src="../SWAR_Website/images/boton7imagen.png" class="ui hidden content"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <script>
-                AOS.init({duration: 3000,})
-            </script>
-        </div>
-
-        <div id="useCases" style="background-color: #EAEAEA;" data-aos="fade-up"> <!--Parte que contamos qué devices tenemos available-->
-            <div class="ui grid center aligned"> 
-                <h1 style="margin-top:5%;">See it in action!</h1>
-            </div>
-            <div  class="ui horizontal bulleted link list grid centered" style="margin: 5%;">
-                <a class="item">Industrial devices use, trouble shooting and maintenance</a>
-                <a class="item">Medical equipment use</a>
-                <a class="item">Assembly Instructions</a>
-                <a class="item">Insurance inspections</a>
-                <a class="item">Common medical procedures</a>
-                <a class="item">Emergency procedures</a>
-                <a class="item">Industrial devices/machinery/tools use</a>
-                <a class="item">Safety and security processes</a>
-                <a class="item">Auditing and inspections</a>
-                <a class="item">Product QA monitoring</a>
-                <a class="item">New employees/Contractor on boarding</a>
-                <a class="item">Facility Management</a>
-                <a class="item">Warehouse picking</a>
-                <a class="item">Delivery and reception inspections</a>
-            </div>
-            <div class="ui centered aligned fluid huge image" style="padding: 1%;"> 
-                <img class="ui fluid huge image" src="../SWAR_Website/images/action.png" alt="Devices " style="padding-left:6%;padding-right:6%;">
-            </div>  
-            <div  class="ui grid center aligned">
-                <button class="ui huge button" style="background-color: #39A8BB;color: white;font-weight: 600; margin-bottom: 6%;">WATCH VIDEO</button>
-            </div> 
-            <script>
-                AOS.init({duration: 3000,})
-            </script>
-        </div>
-        
-    </main>
-
-    <footer>
-
-        <div id="contact" data-aos="fade-up"><!--Formulario de contacto-->
-            <div style="margin-top:60px;width: 70%;" class="ui segment raised container"> 
-                <div class="ui grid center aligned">
-                    <div class="ui form" style="width: 70%;">
-                        <h1 style="margin-top: 40px">Contact us</h1>
-                        <form class="ui form">
-                            <div class="field">
-                            <label>Name</label>
-                            <input type="text" name="first-name" placeholder="Your name here">
+                <div class="ui four column stackable grid center aligned" style="background-color: #EAEAEA; padding:3em;"> 
+                    <div class="column">
+                        <h2 class="ui icon header style_prevu_kit"style="display: inline;">
+                            <i style="color: grey; " class="eye icon"></i>
+                            <div class="content" style="color: #39A8BB;">
+                                Live process capture tool
+                            <div class="sub header">Capture and model any protocol by doing it</div>
                             </div>
-                            <div class="field">
-                            <label>E-mail</label>
-                            <input type="text" name="last-name" placeholder="Your E-mail here">
+                        </h2>
+                    </div>
+                    <div class="column">
+                        <h2 class="ui icon header style_prevu_kit" style="display: inline;">
+                            <i style="color: grey;" class="edit outline icon"></i>
+                            <div class="content" style="color: #39A8BB">
+                                Protocols editing 
+                            <div class="sub header">Easy to use web based protocol editor</div>
                             </div>
-                            <div class="field">
-                                <label>Comment</label>
-                                <textarea></textarea>
+                        </h2>
+                    </div>
+                    <div class="column">
+                        <h2 class="ui icon header style_prevu_kit"style="display: inline;">
+                            <i style="color: grey;" class="sync alternate icon"></i>
+                            <div class="content" style="color: #39A8BB">
+                                On/Off line data sync capabilities
+                            <div class="sub header">No need to be connected to a wifi network to sync</div>
                             </div>
-                            <button class="ui button" type="submit"style="background-color: #39A8BB; margin-bottom: 40px; color:white;">Send</button>
-                        </form>
+                        </h2>
+                    </div>
+                    <div class="column">
+                        <h2 class="ui icon header style_prevu_kit"style="display: inline;">
+                            <i style="color: grey;" class="check icon"></i>
+                            <div class="content" style="color: #39A8BB">
+                                Enforce process compliance
+                            <div class="sub header">Capture evidence of mandatory tasks completion</div>
+                            </div>
+                        </h2>
+                    </div>
+                    <div class="column">
+                        <h2 class="ui icon header style_prevu_kit"style="display: inline;">
+                            <i style="color: grey;" class="search icon"></i>
+                            <div class="content" style="color: #39A8BB">
+                                Data collection 
+                            <div class="sub header">Store in device user data, text, times, dates, locations, data streams, QR and barcode readings, audio, video and photos</div>
+                            </div>
+                        </h2>
+                    </div>
+                    <div class="column">
+                        <h2 class="ui icon header style_prevu_kit"style="display: inline;">
+                            <i style="color: grey;" class="cog icon"></i>
+                            <div class="content" style="color: #39A8BB">
+                                Web server open APIs
+                            <div class="sub header">To feed back to any analytics engine, ERP, LMS, CMS, etc.</div>
+                            </div>
+                        </h2>
+                    </div>
+                    <div class="column">
+                        <h2 class="ui icon header style_prevu_kit"style="display: inline;">
+                            <i style="color: grey;" class="cloud icon"></i>
+                            <div class="content" style="color: #39A8BB">
+                                Cloud based server
+                            <div class="sub header">On AWS or any other Cloud services provider</div>
+                            </div>
+                        </h2>
+                    </div>
+                    <div class="column">
+                        <h2 class="ui icon header style_prevu_kit"style="display: inline;">
+                            <i style="color: grey;" class="laptop icon"></i>
+                            <div class="content" style="color: #39A8BB">
+                                Multiplatform runtime client
+                            <div class="sub header">Android, iOS, Win, Web</div>
+                            </div>
+                        </h2>
+                    </div>
+                    <!--<div class="column">
+                        <h2 class="ui icon header style_prevu_kit">
+                            <i style="color: grey;" class="bluetooth b icon"></i>
+                            <div class="content" style="color: #39A8BB">
+                                Bluetooth and IoT connectivity
+                            <div class="sub header">Read data streams from smart devices like barcode scanners, sensors, beacons
+                                or smart tools directly into protocols</div>
+                            </div>
+                        </h2>
+                    </div>-->
+                    <div class="column">
+                        <h2 class="ui icon header style_prevu_kit"style="display: inline;">
+                            <i style="color: grey;" class="cube icon"></i>
+                            <div class="content" style="color: #39A8BB">
+                                AR ready
+                                <div class="sub header">ARCore, ARKit and MS Mix reality support</div>
+                            </div>
+                        </h2>
+                    </div>
+                    <!--<div class="column">
+                        <h2 class="ui icon header style_prevu_kit">
+                            <i style="color: grey;" class="microphone icon"></i>
+                            <div class="content" style="color: #39A8BB">
+                                Voice engine driven interface available
+                            <div class="sub header">Hands-free App navigation with voice commands and speech-to-text data entry</div>
+                            </div>
+                        </h2>
+                    </div>-->
+                    <div class="column">
+                        <h2 class="ui icon header style_prevu_kit"style="display: inline;">
+                            <i style="color: grey;" class="map marker alternate icon"></i>
+                            <div class="content" style="color: #39A8BB">
+                                Device and protocol handoff
+                            <div class="sub header">Start a task on one device and let others pick up where you left off, on the same
+                                or another device</div>
+                            </div>
+                        </h2>
+                    </div>
+                    <!--<div class="column">
+                        <h2 class="ui icon header style_prevu_kit">
+                            <i style="color: grey;" class="headphones icon"></i>
+                            <div class="content" style="color: #39A8BB">
+                                Remote support via video calling
+                            <div class="sub header">Make and receive video calls and provide remote support</div>
+                            </div>
+                        </h2>
+                    </div>-->
+                    <div class="column">
+                        <h2 class="ui icon header style_prevu_kit"style="display: inline;">
+                            <i style="color: grey;" class="server icon"></i>
+                            <div class="content" style="color: #39A8BB">
+                                Web server portal based Queries
+                            <div class="sub header">Easily query process’s results and save them for further analysis or to be sent to
+                                external systems</div>
+                            </div>
+                        </h2>
+                    </div>
+                    <div class="column">
+                        <h2 class="ui icon header style_prevu_kit"style="display: inline;">
+                            <i style="color: grey;" class="wifi icon"></i>
+                            <div class="content" style="color: #39A8BB">
+                                Wireless updates
+                            <div class="sub header">All client software updates to are wireless, no need to manually connect to a
+                                computer</div>
+                            </div>
+                        </h2>
                     </div>
                 </div>
+                <script>
+                    AOS.init({duration: 3000,})
+                </script>
             </div>
-            <script>
-                AOS.init({duration: 3000,})
-            </script>
-        </div>
-
-        <div><!--Menú del footer con acceso a contact, about, industries, etc, y logo-->
-            <div style="margin-top:60px; background-color: #EAEAEA;">
-                <div class="ui grid center aligned" style="padding:4em;"> 
-                    <div href="#industries" class="ui simple dropdown item">INDUSTRIES<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
-                        <div class="menu">
-                            <div class="item">Oil and gas</div>
-                            <div class="item">Health care</div>
-                            <div class="item">Manufacturing</div>
-                            <div class="item">Construction</div>
-                            <div class="item">Logistics</div>
-                            <div class="item">Others</div>
-                        </div>
+            
+            <div id="diagram" data-aos="fade-up"><!--Parte con el diagrama de funcionamiento e intercambio con el servidor-->
+                <div class="ui grid center aligned" style="margin-top: 10%;margin-bottom: 5%;">
+                    <h1>How does SmartWorkAR® works?</h1>
+                    <div class="ui fluid image" >
+                        <img src="../SWAR_Website/images/diagram.png" alt="" class="ui fluid image" style="padding-right: 10%;padding-left: 10%;">
                     </div>
-
-                    <div class="ui simple dropdown item">ABOUT<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
-                        <div class="menu">
-                            <a class="item" href="#features">What we offer</a>
-                            <a class="item" href="#diagram">How it works</a>
-                            <a class="item" href="#benefits">Benefits</a>
-                            <a class="item" href="#useCases">See it in action</a>
-                        </div>
-                    </div>
-
-                    <a style="color: black;" href="#contact" class="item">CONTACT US</a>
-                    <a style="color: black;" href="#" class="item">LOG IN</a>
+                    <button class="ui large button" style="background-color: #39A8BB;color: white;font-weight: 600; margin-top: 3%;">READ MORE</button>
                 </div>
-                <div class="ui grid center aligned">
-                    <div class="ui medium fluid image" style="margin-bottom: 2em;">
-                        <img src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="logo">
+                <script>
+                    AOS.init({duration: 3000,})
+                </script>
+            </div>
+
+            <div id="benefits" class="separacionSectores" style="background-color: #EAEAEA;padding:3%" data-aos="fade-up"> <!--Parte con los beneficios que trae SWAR a sus clientes-->
+                <div class="ui grid center aligned"> 
+                    <h1 style="margin-top: 3%">What benefits does SmartWorkAR® bring to its customers?</h1>
+                </div>
+                <div class="ui grid centered separacionSectores" style="margin-bottom: 5em;"> 
+                    <div class="item row ui divider">
+                        <div>
+                            <h4 class="onclickchange"><i class="check icon" style="color: green;font-size: 1.5em;"></i>It mitigates trained workforce scarcity</h4>
+                        </div>
                     </div>
+                    <div class="item row ui divider">
+                        <div>
+                            <h4  class="onclickchange"><i class="check icon" style="color: green;font-size: 1.5em;"></i>It highly improves field workforce productivity</h4>
+                        </div>
+                    </div>
+                    <div class="item row ui divider">
+                        <div>
+                            <h4  class="onclickchange"><i class="check icon" style="color: green;font-size: 1.5em;"></i>It raises the potential ceiling of any worker productivity</h4>
+                        </div>
+                    </div>
+                    <div class="item row ui divider">
+                        <div>
+                            <h4  class="onclickchange"><i class="check icon" style="color: green;font-size: 1.5em;"></i>It improves quality output by enforcing and monitoring company processes</h4>
+                        </div>
+                    </div>
+                    <div class="item row ui divider">
+                        <div>
+                            <h4  class="onclickchange"><i class="check icon" style="color: green;font-size: 1.5em;"></i>It bridges the productivity gap between human labor vs automated systems</h4>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    AOS.init({duration: 3000,})
+                </script>
+            </div>
+            
+            <div id="adaptation" data-aos="fade-up"><!--Parte donde contamos como adaptarse a la revolucion digital-->
+                <div class="ui grid center aligned" > 
+                    <div class="ui grid center aligned" style="margin-top: 3%;"> 
+                        <h1 style="margin-top: 3%">Digital revolution impact: we help you adapt to new business models</h1>
+                    </div>
+                    <div class="ui grid center aligned" style="padding-bottom: 4em;padding-left: 4em;padding-right: 4em;"> 
+                        <div class="four wide computer sixteen wide mobile eight wide tablet column">
+                            <div class="ui fluid image fade reveal">
+                                <img src="../SWAR_Website/images/boton4.png" class="visible content"/>
+                                <img src="../SWAR_Website/images/boton4imagen.png" class="ui hidden content"/>
+                            </div>
+                        </div>
+                        <div class="four wide computer sixteen wide mobile eight wide tablet column">
+                            <div class="ui fluid image fade reveal">
+                                <img src="../SWAR_Website/images/boton5.png" class="visible content"/>
+                                <img src="../SWAR_Website/images/boton5imagen.png" class="ui hidden content"/>
+                            </div>
+                        </div>
+                        <div class="four wide computer sixteen wide mobile eight wide tablet column">
+                            <div class="ui fluid image fade reveal">
+                                <img src="../SWAR_Website/images/boton6.png" class="visible content"/>
+                                <img src="../SWAR_Website/images/boton6imagen.png" class="ui hidden content"/>
+                            </div>
+                        </div>
+                        <div class="four wide computer sixteen wide mobile eight wide tablet column">
+                            <div class="ui fluid image fade reveal">
+                                <img src="../SWAR_Website/images/boton7.png" class="visible content"/>
+                                <img src="../SWAR_Website/images/boton7imagen.png" class="ui hidden content"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    AOS.init({duration: 3000,})
+                </script>
+            </div>
+
+            <div id="useCases" style="background-color: #EAEAEA;" data-aos="fade-up"> <!--Parte que contamos qué devices tenemos available-->
+                <div class="ui grid center aligned"> 
+                    <h1 style="margin-top:5%;">See it in action!</h1>
+                </div>
+                <div  class="ui horizontal bulleted link list grid centered" style="margin: 5%;">
+                    <a class="item">Industrial devices use, trouble shooting and maintenance</a>
+                    <a class="item">Medical equipment use</a>
+                    <a class="item">Assembly Instructions</a>
+                    <a class="item">Insurance inspections</a>
+                    <a class="item">Common medical procedures</a>
+                    <a class="item">Emergency procedures</a>
+                    <a class="item">Industrial devices/machinery/tools use</a>
+                    <a class="item">Safety and security processes</a>
+                    <a class="item">Auditing and inspections</a>
+                    <a class="item">Product QA monitoring</a>
+                    <a class="item">New employees/Contractor on boarding</a>
+                    <a class="item">Facility Management</a>
+                    <a class="item">Warehouse picking</a>
+                    <a class="item">Delivery and reception inspections</a>
+                </div>
+                <div class="ui centered aligned fluid huge image" style="padding: 1%;"> 
+                    <img class="ui fluid huge image" src="../SWAR_Website/images/action.png" alt="Devices " style="padding-left:6%;padding-right:6%;">
                 </div>  
+                <div  class="ui grid center aligned">
+                    <button class="ui huge button" style="background-color: #39A8BB;color: white;font-weight: 600; margin-bottom: 6%;">WATCH VIDEO</button>
+                </div> 
+                <script>
+                    AOS.init({duration: 3000,})
+                </script>
             </div>
-        </div>
+            
+        </main>
 
-    </footer>
-    
+        <footer>
+
+            <div id="contact" data-aos="fade-up"><!--Formulario de contacto-->
+                <div style="margin-top:60px;width: 70%;" class="ui segment raised container"> 
+                    <div class="ui grid center aligned">
+                        <div class="ui form" style="width: 70%;">
+                            <h1 style="margin-top: 40px">Contact us</h1>
+                            <form class="ui form">
+                                <div class="field">
+                                <label>Name</label>
+                                <input type="text" name="first-name" placeholder="Your name here">
+                                </div>
+                                <div class="field">
+                                <label>E-mail</label>
+                                <input type="text" name="last-name" placeholder="Your E-mail here">
+                                </div>
+                                <div class="field">
+                                    <label>Comment</label>
+                                    <textarea></textarea>
+                                </div>
+                                <button class="ui button" type="submit"style="background-color: #39A8BB; margin-bottom: 40px; color:white;">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    AOS.init({duration: 3000,})
+                </script>
+            </div>
+
+            <div><!--Menú del footer con acceso a contact, about, industries, etc, y logo-->
+                <div style="margin-top:60px; background-color: #EAEAEA;">
+                    <div class="ui grid center aligned" style="padding:4em;"> 
+                        <div href="#industries" class="ui simple dropdown item">INDUSTRIES<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
+                            <div class="menu">
+                                <div class="item">Oil and gas</div>
+                                <div class="item">Health care</div>
+                                <div class="item">Manufacturing</div>
+                                <div class="item">Construction</div>
+                                <div class="item">Logistics</div>
+                                <div class="item">Others</div>
+                            </div>
+                        </div>
+
+                        <div class="ui simple dropdown item">ABOUT<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
+                            <div class="menu">
+                                <a class="item" href="#features">What we offer</a>
+                                <a class="item" href="#diagram">How it works</a>
+                                <a class="item" href="#benefits">Benefits</a>
+                                <a class="item" href="#useCases">See it in action</a>
+                            </div>
+                        </div>
+
+                        <a style="color: black;" href="#contact" class="item">CONTACT US</a>
+                        <a style="color: black;" href="#" class="item">LOG IN</a>
+                    </div>
+                    <div class="ui grid center aligned">
+                        <div class="ui medium fluid image" style="margin-bottom: 2em;">
+                            <img src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="logo">
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+        </footer>
+    </div>    
 </body>
 </html>

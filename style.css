@@ -24,7 +24,6 @@ margin-right: 0em;
         display: block;
     }
     #myVideo {
-        margin-top: 7em;
         width: 100%;
     }
     .separacionSectores {
@@ -41,7 +40,7 @@ margin-right: 0em;
    
 .style_prevu_kit
 {
-    display:inline-block;
+    display:inline;
     border:0;
     width:210px;
     height:210px;
@@ -56,6 +55,7 @@ margin-right: 0em;
     transform: scale(1); 
 }
 .style_prevu_kit:hover {
+    display: inline;
     box-shadow: 0px 0px 0px #424242;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
@@ -86,66 +86,8 @@ color: black;
 }
 .contenedor{
     position: relative;
-    display: inline-block;
+    display: inline;
     text-align: center;
-}
- 
-.texto-encima{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-.centrado{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-#myDemoVideo {
-    position: inherit;
-    max-width: 50%;
-    overflow: hidden;
-    z-index: -1;
-    display: inline-block;
-    margin-right: 0em;
-    padding: 3%;
-}
-.slider {
-	width: 95%;
-	margin: auto;
-	overflow: hidden;
-}
-
-.slider ul {
-	display: flex;
-	padding: 0;
-	width: 400%;
-	
-}
-
-.slider li {
-	width: 100%;
-    list-style: none;
-    
-}
-
-.slider img {
-    width: 100%;
-    animation: cambio 20s infinite  linear;
-}
-
-@keyframes cambio {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
 }
 h5 {
     cursor: pointer;
