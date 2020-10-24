@@ -127,8 +127,7 @@
                         });
                     </script>
                 </div>
-            </ul>
-           
+            </ul>         
         </header>
 
         <main>  
@@ -141,8 +140,8 @@
 				<p style="text-align:center; margin-left:5%;margin-right:5%">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore vitae repellendus, doloremque dolor dicta unde iure id ratione quaerat animi esse saepe suscipit voluptas atque quam nesciunt corporis ipsa aspernatur! 	</p>
 			</div>  
 
-			<div class="ui grid stackable centered" style="padding: 5%;">
-				<div>
+			<div class="ui grid stackable centered" style="padding: 5%;" data-aos="fade-up">
+				<div style="margin-top:5em">
 					<ul class="slides">
 						<input type="radio" name="radio-btn" id="img-1" checked />
 						<li class="slide-container">
@@ -174,7 +173,7 @@
 				</div>
 			</div>
 
-			<div class="ui two column stackable grid center aligned" style="padding-left: 10%;padding-right: 10%;"> 
+			<div class="ui two column stackable grid center aligned" style="padding-left: 10%;padding-right: 10%;" data-aos="fade-up"> 
 				<div class="column">
 					<h1>Challenge</h1>
 					<p>
@@ -223,20 +222,49 @@
 					</div>
 				</div>
 			</div>
+			<script>
+				AOS.init({duration: 3000,})
+			</script>
         </main>
 
         <footer>	
+			<div id="contact" data-aos="fade-up"><!--Formulario de contacto-->
+                <div style="margin-top:60px;width: 70%;" class="ui segment raised container"> 
+                    <div class="ui grid center aligned">
+                        <div class="ui form"    style="width: 70%;">
+                            <h1 style="margin-top: 40px">Contact us</h1>
+                            <form class="ui form" form action="https://usebasin.com/f/da29355b54a7" method="POST">
+                                <div class="field">
+                                <label>Name</label>
+                                <input type="text" name="name" placeholder="Your name here">
+                                </div>
+                                <div class="field">
+                                <label>E-mail</label>
+                                <input type="email" name="_replyto" placeholder="Your E-mail here">
+                                </div>
+                                <div class="field">
+                                    <label>Comment</label>
+                                    <textarea type="text" name="comment"></textarea>
+                                </div>
+                                <button class="ui button" type="submit" value="Send" style="background-color: #39A8BB; margin-bottom: 40px; color:white;">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    AOS.init({duration: 3000,})
+                </script>
+            </div>
 
             <div><!--Menú del footer con acceso a contact, about, industries, etc, y logo-->
                 <div style="margin-top:60px; background-color: #EAEAEA;">
                     <div class="ui grid center aligned" style="padding:4em;"> 
                         <div href="#industries" class="ui simple dropdown item">INDUSTRIES<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
                             <div class="menu">
-                                <div class="item">Healthcare</div>
-                                <div class="item">Utilities</div>
-                                <div class="item">Logistics</div>
-                                <div class="item">Energy</div>
-                                <div class="item">Mining</div>
+								<a href="healthcare.html" class="item">Healthcare</a>
+                                <a href="utilities.html" class="item">Utilities</a>
+                                <a href="logistics.html" class="item">Logistics</a>
+                                <a href="energy.html"class="item">Energy</a>
                             </div>
                         </div>
 
@@ -258,7 +286,6 @@
                     </div>  
                 </div>
             </div>
-
         </footer>
     </div>    
 </body>
