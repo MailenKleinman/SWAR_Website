@@ -6,7 +6,7 @@
     <title>SmartWorkAR</title>
      
 
-    <!--Este es el css que agregue yo-->
+	<!--Este es el css que agregue yo-->
     <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=12VpOpPJef6LjAf87CpQefHT7hi2gbwcw">
         <!--Estos son los archivos de semantic que nec esita la pag para funcionar-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js">
@@ -28,7 +28,8 @@
                 <div class="ui sidebar stackable vertical left menu">
                     <div class="ui item menu">
                         <img style="padding: 10%;" src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="Logo">
-                    </div>
+					</div>
+					<a href="/index.html" class="ui item menu">HOME</a>
                     <div class="ui item menu">
                         <div class="ui accordion">
                             <div class="title">
@@ -81,9 +82,9 @@
                 <div class="ui stackable top fixed large menu"> <!--Logo de SWAR-->
                     <div class="item">
                         <img style="width: 4em; margin-left: 0.3em" src="../SWAR_Website/images/Logo_SWA_transparent_background2.png" alt="Logo">
-                    </div>
-                    <div class="menu right aligned"> <!--Items del menu principal-->
-                        
+					</div>
+					<a href="/index.html" class="item " style="text-align: center;">HOME</a>
+					<div class="menu right aligned"> <!--Items del menu principal-->
                         <a href="#industries" class="ui simple dropdown item">INDUSTRIES<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
                             <div class="menu">
                                 <div class="item">Healthcare</div>
@@ -94,17 +95,17 @@
                             </div>
                         </a>
 
-                        <div class="ui simple dropdown item">ABOUT<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
-                            <div class="menu">
-                                <a class="item" href="#features">What we offer</a>
-                                <a class="item" href="#diagram">How it works</a>
-                                <a class="item" href="#benefits">Benefits</a>
-                                <a class="item" href="#useCases">See it in action</a>
-                            </div>
-                        </div>
+					<div class="ui simple dropdown item">ABOUT<i class="dropdown icon"></i> <!--este item tiene un dropdown-->
+						<div class="menu">
+							<a class="item" href="#features">What we offer</a>
+							<a class="item" href="#diagram">How it works</a>
+							<a class="item" href="#benefits">Benefits</a>
+							<a class="item" href="#useCases">See it in action</a>
+						</div>
+					</div>
 
-                        <a href="#contact" class="item">CONTACT US</a>
-
+					<a href="#contact" class="item">CONTACT US</a>
+					
                     </div>
                     <script>
                         $('header a').click(function(event){
@@ -146,7 +147,7 @@
                                 <img src="../SWAR_Website/images/healthcare.png" class="ui image">
                             </div>
                             <div class="content">
-                                <a class="header" style="text-align: center;">HEALTH CARE</a>
+                                <a href="healthcare.html" class="header" style="text-align: center;">HEALTH CARE</a>
                             </div>
                         </div>
                     </div>
@@ -156,7 +157,7 @@
                                 <img src="../SWAR_Website/images/manufacturing.png" class="ui image">
                             </div>
                             <div class="content">
-                                <a class="header" style="text-align: center;">UTILITIES</a>
+                                <a href="utilities.html" class="header" style="text-align: center;">UTILITIES</a>
                             </div>
                         </div>
                     </div>
@@ -166,7 +167,7 @@
                                 <img src="../SWAR_Website/images/logistics.png" class="ui image">
                             </div>
                             <div class="content">
-                                <a class="header" style="text-align: center;">LOGISTICS</a>
+                                <a href="logistics.html" class="header" style="text-align: center;">LOGISTICS</a>
                             </div>
                         </div>
                     </div>
@@ -176,7 +177,7 @@
                                 <img src="../SWAR_Website/images/oilandgas.png" class="ui image">
                             </div>
                             <div class="content">
-                                <a class="header" style="text-align: center;">ENERGY</a>
+                                <a href="energy.html" class="header" style="text-align: center;">ENERGY</a>
                             </div>
                         </div>
                     </div>
@@ -186,7 +187,7 @@
                                 <img src="../SWAR_Website/images/construction.png" class="ui image">
                             </div>
                             <div class="content">
-                                <a class="header" style="text-align: center;">MINING</a>
+                                <a href="mining.html" class="header" style="text-align: center;">MINING</a>
                             </div>
                         </div>
                     </div>
@@ -361,7 +362,8 @@
                 <script>
                     AOS.init({duration: 3000,})
                 </script>
-            </div>
+			</div>
+			
             <div id="benefits" class="separacionSectores" style="background-color: #EAEAEA;padding:3%" data-aos="fade-up"> <!--Parte con los beneficios que trae SWAR a sus clientes-->
                 <div class="ui grid center aligned"> 
                     <h1 style="margin-top: 3%">What benefits does SmartWorkAR® bring to its customers?</h1>

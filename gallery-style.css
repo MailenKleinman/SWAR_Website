@@ -1,0 +1,189 @@
+
+#myVideo {
+position: inherit;
+max-width: 100%;
+overflow: hidden;
+z-index: -1;
+display: block;
+margin-right: 0em;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.color-swa {
+    color: #39A8BB;
+}
+
+@media screen and (max-width: 768px) { /*Es lo que tengo que usar para la hamburguesita*/
+    .pcmenu {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    #myVideo {
+        width: 100%;
+        margin-top: auto;
+    }
+    .separacionSectores {
+        margin-bottom: 3em;
+    }
+    body{
+        width: 100%;
+    }
+    img{
+        width: auto;
+        height: auto;
+    }
+}
+   
+.style_prevu_kit
+{
+    display:inline;
+    border:0;
+    width:210px;
+    height:210px;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
+}
+.style_prevu_kit:hover {
+    display: inline;
+    box-shadow: 0px 0px 0px #424242;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
+    border-radius: 1%;
+}
+.background-contact
+{
+    background-image: url(../WEBSITE/images/contact_background.jpg);
+    margin-top: 4em;
+}
+h1 {
+    color: #39A8BB;
+    text-align: center;
+}
+.onclickchange {
+color: black;
+}
+.onclickchange:hover{
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
+}
+.contenedor{
+    position: relative;
+    display: inline;
+    text-align: center;
+}
+h5 {
+    cursor: pointer;
+}
+
+
+
+.slides {
+    padding: 0;
+    width: 609px;
+    height: 420px;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+}
+
+
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;	
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: #39A8BB;
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+    background: #39A8BB;
+}
+
